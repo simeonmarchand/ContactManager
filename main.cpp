@@ -25,7 +25,7 @@ int arraySize = 0;
     }
 
     void loadData(){
-        ifStream dataFile(s: "data.txt");
+        ifstream dataFile("data.txt");
         if(dataFile.fail()){
             //file could not be opened
         }else{
@@ -49,12 +49,12 @@ int arraySize = 0;
 
     void save(){
         ofstream myfile;
-        myfile.open(s: "data.txt");
-        fot (int i=0; i<arraySize; i++){
-            myfile << namesArray[I] + "\n";
-            myfile << numbersArray[I] + "\n";
+        myfile.open("data.txt");
+        for (int i=0; i<arraySize; i++){
+            myfile << namesArray[i] + "\n";
+            myfile << numbersArray[i] + "\n";
         }
-        myfile.closed();
+        myfile.close();
     }
 
     //Sorting Acending order
