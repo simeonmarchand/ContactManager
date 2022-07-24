@@ -17,7 +17,7 @@ int arraySize = 0;
         string line;
         getline(cin, line);
         namesArray[arraySize] = line;
-        cout<<"Please enter a number for " << namesArray[arraySize]<< " :" <<endl;
+        cout<<"Please enter a number for " << namesArray[arraySize]<< ": " <<endl;
         cin.ignore();
         getline(cin, line);
         numbersArray[arraySize] = line;
