@@ -1,0 +1,3 @@
+/Users/simeonmarchand/Projects/CPPRasmussen/ContactManager/cmake-build-debug/CMakeFiles/ContactManager.dir
+/Users/simeonmarchand/Projects/CPPRasmussen/ContactManager/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/simeonmarchand/Projects/CPPRasmussen/ContactManager/cmake-build-debug/CMakeFiles/rebuild_cache.dir
