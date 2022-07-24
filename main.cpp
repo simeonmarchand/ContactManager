@@ -145,6 +145,38 @@ void print(){
                 break;
         }
     }
+
+    //Menu
+    void  printMenu(){
+        bool shouldQuit = 0;
+        while (!shouldQuit){
+            string menuChoice = "";
+
+            cout<<"\n===== MENU ====="<< endl;
+            cout << "Enter Contact: 1 "<<
+                    "\nSort Acending: 2 "<<
+                    "\nSort Decending: 3 "<<
+                    "\nPrint Contacts: 4 "<<
+                    "\nSearch Contacts: 5 "<<
+                    "\nSave Data: 6 "<<
+                    "\nExit The Program: 7 "<<
+                    "\n=================="<<endl;
+            cin>>menuChoice;
+
+            if (menuChoice == "7"){
+                shouldQuit = 1;
+            }else if (menuChoice== "1" ||
+                      menuChoice == "2" ||
+                      menuChoice == "3" ||
+                      menuChoice == "4" ||
+                      menuChoice == "5" ||
+                      menuChoice == "6"){
+                menuSelect(stoi(menuChoice));
+        }else{
+            cout<< "\nIncorrect Selection. Try Again!"<<endl;
+            }
+        }
+    }
 int main() {
     loadData();
     printMenu();
