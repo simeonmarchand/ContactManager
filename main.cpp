@@ -127,6 +127,24 @@ void print(){
             cout<<"The name you entered was not found. Sorry!"<<endl;
         }
     }
+
+    //menu operations
+    void menuSelect(int choice){
+        switch (choice) {
+            case 1: getData();
+                break;
+            case 2: sortAce();
+                break;
+            case 3: sortDec();
+                break;
+            case 4: print();
+                break;
+            case 5: search();
+                break;
+            case 6: save();
+                break;
+        }
+    }
 int main() {
     loadData();
     printMenu();
